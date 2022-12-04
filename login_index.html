@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ABSTRACT Login</title>
+    <link rel="stylesheet" href="./css/login_style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="./img/Logo simplificado.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/Logo simplificado.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/Logo simplificado.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+  <!---Navbar--->
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-end">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria_index.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login_index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./acerca_de_nosotros_index.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error404_index.html">Error 404</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!---Navbar--->
+
+<!-- LOGIN-->
+ <main>
+    <div class="container-login">
+        <div class="img">
+            <img src="../Practico Nº1/svg/fondo.svg">
+        </div>
+        <div class="login-container">
+            <form action="indexhtml">
+                <img src="../Practico Nº1/svg/avatar.svg" class="avatar" alt="">
+                <h2>Welcome</h2>
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <h5>Usuario</h5>
+                        <input class="input" type="text" required>
+                    </div>
+                </div>
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <h5>Contraseña</h5>
+                        <input class="input" type="password" required>
+                    </div>
+                </div>
+                <a href="./form.html">¿Desea crear una cuenta?</a>
+                <a href="#">¿Olvidaste tu Contraseña?</a>
+                <input type="submit" class="btn" value="login">
+            </form>
+        </div>
+    </div>
+</main>
+    
+<script type="text/javascript" src="../js/login.js"></script>
+<script src="https://kit.fontawesome.com/8c21b71e8d.js" crossorigin="anonymous"></script>    
+<!-- LOGIN-->
+
+<!--Footer-->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="img/Logo.png" alt="Logo de SLee Dw">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Literalmente, te abrí una página que dice Nosotros, y esperas leer algo diferente aquí abajo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsum.</p>
+      </div>
+      <div class="box">
+          <h2>SEGUINOS</h2>
+          <div class="red-social">
+              <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram"></a>
+              <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+              <a href="error404_index.html" class="fa fa-youtube"></a>
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2022 <b>ABSTRACT</b> - Todos los Derechos e Izquierdos Reservados.</small>
+  </div>
+</footer>
+<!--Footer-->
+</body>
+</html>

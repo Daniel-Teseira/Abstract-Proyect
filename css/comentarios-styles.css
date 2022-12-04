@@ -1,0 +1,65 @@
+
+     .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+.card:hover {
+    transform: scale(1.4);
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+.coments {
+    text-align: center;
+}
+.comentarios{
+    border-radius: 5px;
+    background-color: rgb(225, 242, 126);
+}
+
+.corazones{
+    display: flex;
+    flex-direction:row;
+    color: rgb(255, 0, 0);
+    font-size: 2em;
+    justify-content: center;
+}
+
+.nocorazon{
+    display: flex;
+    flex-direction:row;
+    color: black;
+    justify-content: center;
+}
+
+.dos {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;  
+}
+
+@media (min-width: 40em) {
+  .dos {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;  
+}
+}
+
+@media (min-width: 62em) {
+  .dos {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;  
+}
+}

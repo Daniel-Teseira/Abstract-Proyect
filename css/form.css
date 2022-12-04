@@ -1,0 +1,144 @@
+.body {
+    font-family: Helvetica;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #F2F2F2;
+  }
+:focus{
+    outline-color: transparent;
+    outline-style: none;
+}
+header{
+    min-height: 100%;
+}
+
+.formulario{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-right: 25%;
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+
+.contenedor{
+    max-width: 500px;
+    width: 90%;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.titulo{
+    max-width: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.25em;
+}
+
+.formulario .grupo{
+    margin-bottom: 60px;
+}
+
+.formulario .grupo > input, .formulario .grupo >textarea {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.formulario .grupo > label{
+    display: block;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.formulario .radio input, .formulario .checkbox input{
+    margin-right: 10px;
+}
+
+.formulario .checkbox label{
+    margin-left: 20px;
+}
+
+/* .formulario .nombre:focus {
+    -webkit-appearance: listbox;
+    border: none; 
+    border: 3px solid red; 
+} */
+
+.formulario .gustos, .formulario .radio, .formulario .colorf{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/*:::::Footer*/
+.pie-pagina{
+    position: absolute;
+    width: 100%;
+    background-color: #212f4a;
+  }
+  .pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+  }
+  .pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+  }
+  .pie-pagina .grupo-1 .box h2{
+    color: #f2f2f2;
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .pie-pagina .grupo-1 .box p{
+    color: #FFE7F5;
+    margin-bottom: 10px;
+  }
+  .pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #FFE7F5;
+    margin-right: 10px;
+    background-color: #F2F2F2;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .pie-pagina .grupo-1 .red-social a:hover{
+    color: #FFE7F5;
+  }
+  .pie-pagina .grupo-2{
+    background-color: #212F4A;
+    padding: 15px 10px;
+    text-align: center;
+    color: #FFE7F5;
+  }
+  .pie-pagina .grupo-2 small{
+    font-size: 15px;
+  }
+  @media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+  }
+  
+  

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Form</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Teseira">
+    <meta name="description" content="Descripcion de la pagina WEB">
+    <meta name="keywords" content="palabras claves para los buscadores">
+    <link rel="icon" type="image" href="./images/diseno-iconos-ux-655x470.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" sizes="180x180" href="./img/Logo simplificado.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/Logo simplificado.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/Logo simplificado.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="../css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <!---Navbar--->
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav text-end">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria_index.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login_index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./acerca_de_nosotros_index.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./error404_index.html">Error 404</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!---Navbar--->
+
+    <main>        
+        <div class="menu">
+            <form action="" class="formulario">
+                <div class="grupo">                    
+                    <label for="nombre">Nombre/s</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Escriba aqui" autofocus class="nombre">
+                </div> 
+                <div class="grupo">    
+                        <label for="apellido">Apellido/s</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Escriba aqui" class="nombre">
+                </div>  
+
+                <hr>
+    
+                <div class="grupo">
+                    <label for="direccion">Ingrese su Dirección:</label>
+                    <textarea id="direccion" name="direccion" required></textarea>
+                </div>
+    
+                <div class="grupo">
+                    <label for="codpostal">Ingrese su Codigo Postal:</label>
+                    <input id="codpostal"  name="codpostal"  maxlength="4" required>
+                </div>
+    
+                <div class="grupo">
+                    <label for="ciudad">Ingrese su Ciudad:</label>
+                    <input id="ciudad" part="input" autocomplete="off" aria-label="ciudad" aria-invalid="false" tabindex="0" maxlength="1000">
+                </div>
+    
+                <div class="grupo">
+                    <label for="provincia">Ingrese su Provincia:</label>
+                    <input id="provincia" part="provincia" autocomplete="off" aria-label="provincia" aria-invalid="false" tabindex="0" maxlength="1000">
+                </div>                              
+                
+                <hr>
+
+                <div class="grupo">
+                    <label for="email">Ingrese su Correo:</label>
+                        <input type="email" name="email" id="email" required placeholder="alguien@example.com">
+                </div>      
+
+                <div class="grupo">
+                    <label for="email">Reingrese su Correo:</label>
+                        <input type="email" name="email" id="email" required placeholder="alguien@example.com">
+                </div> 
+                
+                <div class="grupo">
+                    <label for="pass1">Ingrese su Contrasaña:</label>
+                        <input type="password" name="pass1" id="pass1" >
+                </div>
+
+                <div class="grupo">
+                    <label for="pass2">Reingrese su Contrasaña:</label>
+                        <input type="password" name="pass2" id="pass2" >
+                </div>
+                
+                <hr>
+
+                <div class="grupo">
+                    <label for="telefono">Ingrese su N° de Telefono:</label>
+                    <input type="tel" name="telefono" id="telefono" required placeholder="3815-555555">
+    
+                </div>
+    
+                <div class="grupo">
+                    <label for="fecNac">Fecha de Nacimiento</label><br>
+                    <input type="date" id="fecNac" name="birthdate" required>
+                </div>
+                <div class="grupo">
+                    <label for="comentarios">Comentarios: </label>
+                        <textarea name="comentarios" id="comentarios" minlength="20" maxlength="200" required placeholder="Escriba Aqui!!" ></textarea>
+                </div>            
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Restaurar">
+                <button type="submit" value="Enviar" name="boton">Otro boton para enviar xD</button>
+    
+                <br><br><br>
+                  
+            </form>
+        </div>
+
+    
+<!--Footer-->
+<footer class="pie-pagina">
+  <div class="grupo-1">
+      <div class="box">
+          <figure>
+              <a href="#">
+                  <img src="img/Logo.png" alt="Logo de SLee Dw">
+              </a>
+          </figure>
+      </div>
+      <div class="box">
+          <h2>SOBRE NOSOTROS</h2>
+          <p>Literalmente, te abrí una página que dice Nosotros, y esperas leer algo diferente aquí abajo?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ipsum.</p>
+      </div>
+      <div class="box">
+          <h2>SEGUINOS</h2>
+          <div class="red-social">
+              <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+              <a href="https://www.instagram.com/?hl=es-la" class="fa fa-instagram"></a>
+              <a href="https://twitter.com/home" class="fa fa-twitter"></a>
+              <a href="error404_index.html" class="fa fa-youtube"></a>
+          </div>
+      </div>
+  </div>
+  <div class="grupo-2">
+      <small>&copy; 2022 <b>ABSTRACT</b> - Todos los Derechos e Izquierdos Reservados.</small>
+  </div>
+</footer>
+<!--Footer-->
+
+        
+    </main>
+
+   
+</body>
+</html>
